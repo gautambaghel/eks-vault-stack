@@ -43,7 +43,6 @@ component "eks" {
     version = "19.6.0"
 
     inputs = {
-
         cluster_name                   = var.name
         cluster_version                = var.cluster_version
         cluster_endpoint_public_access = true

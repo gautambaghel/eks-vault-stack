@@ -22,7 +22,7 @@ deployment "west" {
     azs                 = ["us-west-2a", "us-west-2b", "us-west-2c"]
     cluster_version     = "1.28"
     tags                = {
-      GithubRepo = "github.com/gautambaghel/eks-vault-stack"
+      GithubRepo        = "github.com/gautambaghel/eks-vault-stack"
     }
   }
 }
