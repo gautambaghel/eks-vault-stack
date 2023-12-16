@@ -10,6 +10,23 @@ variable "role_arn" {
   type = string
 }
 
+variable "name" {
+  type        = string
+  default     = "vault"
+}
+
+variable "tags" {
+  type = map(string)
+  default = {
+    GithubRepo = "github.com/gautambaghel/eks-vault-stack"
+  }
+}
+
+variable "azs" {
+  type    = list(string)
+  default = ["us-west-2a", "us-west-2b", "us-west-2c"]
+}
+
 variable "cluster_version" {
   type        = string
   description = "Kubernetes version to use for EKS Cluster"
@@ -24,4 +41,5 @@ variable "vpc_cidr" {
 
 variable "instances" {
   type = number
+  default = 1
 }
